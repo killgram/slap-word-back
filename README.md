@@ -4,7 +4,7 @@
 #### GET
 
 ```http
-/status
+GET /status
 ```
 
 getting the status of the service
