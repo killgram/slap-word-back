@@ -3,9 +3,9 @@ export enum DBLists {
   RU_WORDS_DB = "RU_WORDS_DB",
 }
 
-export enum LanguageList {
-  ru = "ru",
-}
+export const LanguageList = {
+  ru: "ru",
+};
 
 export enum CollectionLists {
   RU_4_WORDS = "RU_4_WORDS",

@@ -10,7 +10,7 @@ const getWord = async (req: Request, res: Response) => {
       success: false,
     });
   }
-  if (LanguageList.ru !== language) {
+  if (!Object.keys(LanguageList).includes(String(language))) {
     return res.status(200).send({
       title: "language incorrect",
       success: false,
@@ -26,7 +26,7 @@ const getWord = async (req: Request, res: Response) => {
     });
   }
 
-  const word = await getWordLength(language, length);
+  const word = await getWordLength(String(language), length);
   res.status(200).send({
     word: word,
     success: true,
