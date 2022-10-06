@@ -1,3 +1,4 @@
 import { getWorkStatus } from "./GetWorkStatus";
+import { getWord } from "./GetWord";
 
-export { getWorkStatus };
+export { getWorkStatus, getWord };
