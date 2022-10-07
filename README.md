@@ -18,6 +18,17 @@ GET /getWord
 
 getting a random word of a given length
 
+```http
+GET /signIn
+```
+
+| Parameter  | Type     | Description                   |
+|:-----------|:---------|:------------------------------|
+| `login`    | `string` | **Required**. User login      |
+| `password` | `string` | **Required**. User password   |
+
+gets user data
+
 #### POST
 
 ```http
