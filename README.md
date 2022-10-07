@@ -29,6 +29,17 @@ GET /signIn
 
 gets user data
 
+```http
+GET /checkWord
+```
+
+| Parameter  | Type     | Description                 |
+|:-----------|:---------|:----------------------------|
+| `language` | `string` | **Required**. Word language |
+| `word`     | `string` | **Required**. search word   |
+
+checking the word for existence in the database
+
 #### POST
 
 ```http

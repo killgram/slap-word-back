@@ -3,5 +3,6 @@ import { getWord } from "./GetWord";
 import { signUp } from "./SignUp";
 import { signIn } from "./SignIn";
 import { updateScore } from "./UpdateScore";
+import { checkWord } from "./CheckWord";
 
-export { getWorkStatus, getWord, signUp, signIn, updateScore };
+export { getWorkStatus, getWord, signUp, signIn, updateScore, checkWord };

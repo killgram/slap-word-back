@@ -3,6 +3,7 @@ import { checkExistUserService } from "./CheckExistUserService";
 import { regNewUserService } from "./RegNewUserService";
 import { getUserDataService } from "./GetUserDataService";
 import { updateScoreService } from "./UpdateScoreService";
+import { checkWordIsExist } from "./CheckWordIsExist";
 
 export {
   getWordService,
@@ -10,4 +11,5 @@ export {
   regNewUserService,
   getUserDataService,
   updateScoreService,
+  checkWordIsExist,
 };
