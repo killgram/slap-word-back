@@ -10,6 +10,7 @@ import {
   signIn,
   updateScore,
   checkWord,
+  getTopScoreUsers,
 } from "./modules";
 
 // configuration
@@ -22,6 +23,7 @@ app.get("/status", getWorkStatus);
 app.get("/getWord", getWord);
 app.get("/signIn", signIn);
 app.get("/checkWord", checkWord);
+app.get("/getTopScore", getTopScoreUsers);
 
 // POST
 app.post("/signUp", signUp);

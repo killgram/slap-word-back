@@ -4,6 +4,7 @@ import { regNewUserService } from "./RegNewUserService";
 import { getUserDataService } from "./GetUserDataService";
 import { updateScoreService } from "./UpdateScoreService";
 import { checkWordIsExist } from "./CheckWordIsExist";
+import { getTopScoreListService } from "./GetTopScoreListService";
 
 export {
   getWordService,
@@ -12,4 +13,5 @@ export {
   getUserDataService,
   updateScoreService,
   checkWordIsExist,
+  getTopScoreListService,
 };

@@ -7,6 +7,7 @@
 GET /status
 ```
 getting the status of the service
+
 ```http
 GET /getWord
 ```
@@ -36,9 +37,14 @@ GET /checkWord
 | Parameter  | Type     | Description                 |
 |:-----------|:---------|:----------------------------|
 | `language` | `string` | **Required**. Word language |
-| `word`     | `string` | **Required**. search word   |
+| `word`     | `string` | **Required**. Search word   |
 
 checking the word for existence in the database
+
+```http
+GET /getTopScore
+```
+getting a list of users with the highest score
 
 #### POST
 
