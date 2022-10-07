@@ -17,3 +17,16 @@ GET /getWord
 | `length`   | `string` | **Required**. Word length    |
 
 getting a random word of a given length
+
+#### POST
+
+```http
+POST /signUp
+```
+
+| Parameter  | Type     | Description                 |
+|:-----------|:---------|:----------------------------|
+| `login`    | `string` | **Required**. User login    |
+| `password` | `string` | **Required**. User password |
+
+registers a user in the system

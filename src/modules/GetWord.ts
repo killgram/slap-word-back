@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { Constants, LanguageList } from "../configurations";
-import { getWordLength } from "../services";
+import { getWordService } from "../services";
 
 const getWord = async (req: Request, res: Response) => {
   const { language, length } = req.query;
@@ -26,7 +26,7 @@ const getWord = async (req: Request, res: Response) => {
     });
   }
 
-  const word = await getWordLength(String(language), length);
+  const word = await getWordService(String(language), length);
   res.status(200).send({
     word: word,
     success: true,

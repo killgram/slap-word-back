@@ -7,6 +7,7 @@ import {
   CollectionLists,
 } from "./WordsDbEnum";
 import { Constants } from "./Constants";
+import { AuthEnum } from "./AuthEnum";
 
 export {
   db_url,
@@ -16,4 +17,5 @@ export {
   LanguageList,
   Constants,
   CollectionLists,
+  AuthEnum,
 };

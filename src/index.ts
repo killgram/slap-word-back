@@ -3,15 +3,22 @@ import cors from "cors";
 const app: Application = express();
 const PORT = process.env.PORT || 9987;
 
-import { getWorkStatus, getWord } from "./modules";
+import { getWorkStatus, getWord, signUp, signIn } from "./modules";
 
+// configuration
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// GET
 app.get("/status", getWorkStatus);
 app.get("/getWord", getWord);
+app.get("/signIn", signIn);
 
+// POST
+app.post("/signUp", signUp);
+
+// listener
 app.listen(PORT, (): void => {
   console.log(`Server running on port here 👉 ${PORT}`);
 });

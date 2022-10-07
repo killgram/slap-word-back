@@ -1,7 +1,7 @@
 import { client, CollectionLists, DBLists } from "../configurations";
 import { getRandomNumber, getWordDb } from "../utils";
 
-const getWordLength = async (
+const getWordService = async (
   language: string,
   length: any
 ): Promise<string> => {
@@ -26,4 +26,4 @@ const getWordLength = async (
   return wordObj[0].item;
 };
 
-export { getWordLength };
+export { getWordService };

@@ -1,3 +1,5 @@
-import { getWordLength } from "./GetWordLength";
+import { getWordService } from "./GetWordService";
+import { checkExistUserService } from "./CheckExistUserService";
+import { regNewUserService } from "./RegNewUserService";
 
-export { getWordLength };
+export { getWordService, checkExistUserService, regNewUserService };
