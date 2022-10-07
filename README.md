@@ -41,3 +41,15 @@ POST /signUp
 | `password` | `string` | **Required**. User password |
 
 registers a user in the system
+
+```http
+POST /updateScore
+```
+
+| Parameter  | Type     | Description                 |
+|:-----------|:---------|:----------------------------|
+| `login`    | `string` | **Required**. User login    |
+| `password` | `string` | **Required**. User password |
+| `score`    | `number` | **Required**. User score    |
+
+updates the user's score
