@@ -46,6 +46,16 @@ GET /getTopScore
 ```
 getting a list of users with the highest score
 
+```http
+GET /getWordOfTheDay
+```
+
+| Parameter  | Type     | Description                 |
+|:-----------|:---------|:----------------------------|
+| `language` | `string` | **Required**. Word language |
+
+getting the word of the day
+
 #### POST
 
 ```http

@@ -11,6 +11,7 @@ import {
   updateScore,
   checkWord,
   getTopScoreUsers,
+  getWordOfTheDay,
 } from "./modules";
 
 // configuration
@@ -24,6 +25,7 @@ app.get("/getWord", getWord);
 app.get("/signIn", signIn);
 app.get("/checkWord", checkWord);
 app.get("/getTopScore", getTopScoreUsers);
+app.get("/getWordOfTheDay", getWordOfTheDay);
 
 // POST
 app.post("/signUp", signUp);
