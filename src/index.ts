@@ -31,6 +31,7 @@ app.get("/getWordOfTheDay", getWordOfTheDay);
 // GET ROOT
 app.get("/getRootXKey", root.getRootXKey);
 app.get("/getWrongWord", root.getWrongWord);
+app.get("/getCurrentWrongWord", root.getCurrentWrongWord);
 
 // POST
 app.post("/signUp", signUp);

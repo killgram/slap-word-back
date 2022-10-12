@@ -1,11 +1,13 @@
 # Slap Word Back
 
 ## API Reference
+
 #### GET
 
 ```http
 GET /status
 ```
+
 getting the status of the service
 
 ```http
@@ -44,6 +46,7 @@ checking the word for existence in the database
 ```http
 GET /getTopScore
 ```
+
 getting a list of users with the highest score
 
 ```http
@@ -113,3 +116,14 @@ GET /getWrongWord
 | `xKey`     | `string` | **Required**. Root xKey  |
 
 get a list of invalid words
+
+```http
+GET /getCurrentWrongWord
+```
+
+| Parameter | Type     | Description             |
+|:----------|:---------|:------------------------|
+| `xKey`    | `string` | **Required**. Root xKey |
+| `word`    | `string` | **Required**. Word      |
+
+returns the number of matches of the wrong word
