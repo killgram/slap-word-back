@@ -13,6 +13,7 @@ import {
   getTopScoreUsers,
   getWordOfTheDay,
   wrongWord,
+  root,
 } from "./modules";
 
 // configuration
@@ -27,6 +28,8 @@ app.get("/signIn", signIn);
 app.get("/checkWord", checkWord);
 app.get("/getTopScore", getTopScoreUsers);
 app.get("/getWordOfTheDay", getWordOfTheDay);
+// GET ROOT
+app.get("/getRootXKey", root.getRootXKey);
 
 // POST
 app.post("/signUp", signUp);

@@ -9,6 +9,7 @@ import {
 import { Constants } from "./Constants";
 import { AuthEnum } from "./AuthEnum";
 import { WrongWordEnum } from "./WrongWordEnum";
+import { RootTableEnum } from "./RootTableEnum";
 
 export {
   db_url,
@@ -20,4 +21,5 @@ export {
   CollectionLists,
   AuthEnum,
   WrongWordEnum,
+  RootTableEnum,
 };

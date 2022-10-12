@@ -90,3 +90,16 @@ POST /wrongWord
 | `word`    | `string` | **Required**. User suggestions |
 
 send a custom suggestion for the wrong word
+
+#### ROOT GET
+
+```http
+GET /getRootXKey
+```
+
+| Parameter  | Type     | Description                 |
+|:-----------|:---------|:----------------------------|
+| `login`    | `string` | **Required**. Root login    |
+| `password` | `string` | **Required**. Root password |
+
+gets root xKey

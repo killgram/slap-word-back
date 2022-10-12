@@ -8,6 +8,8 @@ import { getTopScoreUsers } from "./GetTopScoreUsers";
 import { getWordOfTheDay } from "./GetWordOfTheDay";
 import { wrongWord } from "./WrongWord";
 
+import * as root from "./root";
+
 export {
   getWorkStatus,
   getWord,
@@ -18,4 +20,5 @@ export {
   getTopScoreUsers,
   getWordOfTheDay,
   wrongWord,
+  root,
 };
