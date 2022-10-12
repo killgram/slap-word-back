@@ -102,4 +102,14 @@ GET /getRootXKey
 | `login`    | `string` | **Required**. Root login    |
 | `password` | `string` | **Required**. Root password |
 
-gets root xKey
+get root xKey
+
+```http
+GET /getWrongWord
+```
+
+| Parameter  | Type     | Description              |
+|:-----------|:---------|:-------------------------|
+| `xKey`     | `string` | **Required**. Root xKey  |
+
+get a list of invalid words

@@ -30,6 +30,7 @@ app.get("/getTopScore", getTopScoreUsers);
 app.get("/getWordOfTheDay", getWordOfTheDay);
 // GET ROOT
 app.get("/getRootXKey", root.getRootXKey);
+app.get("/getWrongWord", root.getWrongWord);
 
 // POST
 app.post("/signUp", signUp);
