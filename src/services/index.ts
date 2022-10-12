@@ -7,6 +7,7 @@ import { checkWordIsExist } from "./CheckWordIsExist";
 import { getTopScoreListService } from "./GetTopScoreListService";
 import { setWrongWordService } from "./SetWrongWordService";
 import { getSupportService } from "./GetSupportService";
+import { getAboutAppService } from "./GetAboutAppService";
 
 import * as rootService from "./root";
 
@@ -21,4 +22,5 @@ export {
   setWrongWordService,
   rootService,
   getSupportService,
+  getAboutAppService,
 };

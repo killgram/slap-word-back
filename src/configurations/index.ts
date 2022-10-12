@@ -11,6 +11,7 @@ import { AuthEnum } from "./AuthEnum";
 import { WrongWordEnum } from "./WrongWordEnum";
 import { RootTableEnum } from "./RootTableEnum";
 import { SupportEnum } from "./SupportEnum";
+import { AboutAppEnum } from "./AboutAppEnum";
 
 export {
   db_url,
@@ -24,4 +25,5 @@ export {
   WrongWordEnum,
   RootTableEnum,
   SupportEnum,
+  AboutAppEnum,
 };

@@ -65,6 +65,12 @@ GET /support
 
 get support data
 
+```http
+GET /getAboutApp
+```
+
+get about app data
+
 #### POST
 
 ```http
