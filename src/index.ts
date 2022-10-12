@@ -12,6 +12,7 @@ import {
   checkWord,
   getTopScoreUsers,
   getWordOfTheDay,
+  wrongWord,
 } from "./modules";
 
 // configuration
@@ -30,6 +31,7 @@ app.get("/getWordOfTheDay", getWordOfTheDay);
 // POST
 app.post("/signUp", signUp);
 app.post("/updateScore", updateScore);
+app.post("/wrongWord", wrongWord);
 
 // listener
 app.listen(PORT, (): void => {

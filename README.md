@@ -80,3 +80,13 @@ POST /updateScore
 | `score`    | `number` | **Required**. User score    |
 
 updates the user's score
+
+```http
+POST /wrongWord
+```
+
+| Parameter | Type     | Description                    |
+|:----------|:---------|:-------------------------------|
+| `word`    | `string` | **Required**. User suggestions |
+
+send a custom suggestion for the wrong word

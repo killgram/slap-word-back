@@ -6,6 +6,7 @@ import { updateScore } from "./UpdateScore";
 import { checkWord } from "./CheckWord";
 import { getTopScoreUsers } from "./GetTopScoreUsers";
 import { getWordOfTheDay } from "./GetWordOfTheDay";
+import { wrongWord } from "./WrongWord";
 
 export {
   getWorkStatus,
@@ -16,4 +17,5 @@ export {
   checkWord,
   getTopScoreUsers,
   getWordOfTheDay,
+  wrongWord,
 };

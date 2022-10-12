@@ -8,6 +8,7 @@ import {
 } from "./WordsDbEnum";
 import { Constants } from "./Constants";
 import { AuthEnum } from "./AuthEnum";
+import { WrongWordEnum } from "./WrongWordEnum";
 
 export {
   db_url,
@@ -18,4 +19,5 @@ export {
   Constants,
   CollectionLists,
   AuthEnum,
+  WrongWordEnum,
 };

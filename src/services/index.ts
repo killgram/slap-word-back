@@ -5,6 +5,7 @@ import { getUserDataService } from "./GetUserDataService";
 import { updateScoreService } from "./UpdateScoreService";
 import { checkWordIsExist } from "./CheckWordIsExist";
 import { getTopScoreListService } from "./GetTopScoreListService";
+import { setWrongWordService } from "./SetWrongWordService";
 
 export {
   getWordService,
@@ -14,4 +15,5 @@ export {
   updateScoreService,
   checkWordIsExist,
   getTopScoreListService,
+  setWrongWordService,
 };
