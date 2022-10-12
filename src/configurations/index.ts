@@ -10,6 +10,7 @@ import { Constants } from "./Constants";
 import { AuthEnum } from "./AuthEnum";
 import { WrongWordEnum } from "./WrongWordEnum";
 import { RootTableEnum } from "./RootTableEnum";
+import { SupportEnum } from "./SupportEnum";
 
 export {
   db_url,
@@ -22,4 +23,5 @@ export {
   AuthEnum,
   WrongWordEnum,
   RootTableEnum,
+  SupportEnum,
 };

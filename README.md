@@ -59,6 +59,12 @@ GET /getWordOfTheDay
 
 getting the word of the day
 
+```http
+GET /support
+```
+
+get support data
+
 #### POST
 
 ```http

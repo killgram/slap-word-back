@@ -14,6 +14,7 @@ import {
   getWordOfTheDay,
   wrongWord,
   root,
+  support,
 } from "./modules";
 
 // configuration
@@ -28,6 +29,7 @@ app.get("/signIn", signIn);
 app.get("/checkWord", checkWord);
 app.get("/getTopScore", getTopScoreUsers);
 app.get("/getWordOfTheDay", getWordOfTheDay);
+app.get("/support", support);
 // GET ROOT
 app.get("/getRootXKey", root.getRootXKey);
 app.get("/getWrongWord", root.getWrongWord);

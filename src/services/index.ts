@@ -6,6 +6,7 @@ import { updateScoreService } from "./UpdateScoreService";
 import { checkWordIsExist } from "./CheckWordIsExist";
 import { getTopScoreListService } from "./GetTopScoreListService";
 import { setWrongWordService } from "./SetWrongWordService";
+import { getSupportService } from "./GetSupportService";
 
 import * as rootService from "./root";
 
@@ -19,4 +20,5 @@ export {
   getTopScoreListService,
   setWrongWordService,
   rootService,
+  getSupportService,
 };

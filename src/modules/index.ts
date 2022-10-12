@@ -7,6 +7,7 @@ import { checkWord } from "./CheckWord";
 import { getTopScoreUsers } from "./GetTopScoreUsers";
 import { getWordOfTheDay } from "./GetWordOfTheDay";
 import { wrongWord } from "./WrongWord";
+import { support } from "./Support";
 
 import * as root from "./root";
 
@@ -21,4 +22,5 @@ export {
   getWordOfTheDay,
   wrongWord,
   root,
+  support,
 };
