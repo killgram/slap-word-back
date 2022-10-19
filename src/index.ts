@@ -18,7 +18,11 @@ import {
   getAboutApp,
 } from "./modules";
 
-import { authenticateJWT } from "./middleware";
+import {
+  authenticateJWT,
+  verificationAuthGet,
+  verificationAuthPost,
+} from "./middleware";
 
 // configuration
 app.use(cors());
@@ -28,21 +32,21 @@ app.use(express.urlencoded({ extended: true }));
 // GET
 app.get("/status", getWorkStatus);
 app.get("/getWord", authenticateJWT, getWord);
-app.get("/signIn", signIn);
-app.get("/checkWord", checkWord);
-app.get("/getTopScore", getTopScoreUsers);
-app.get("/getWordOfTheDay", getWordOfTheDay);
-app.get("/support", support);
-app.get("/getAboutApp", getAboutApp);
+app.get("/signIn", verificationAuthGet, signIn);
+app.get("/checkWord", authenticateJWT, checkWord);
+app.get("/getTopScore", authenticateJWT, getTopScoreUsers);
+app.get("/getWordOfTheDay", authenticateJWT, getWordOfTheDay);
+app.get("/support", authenticateJWT, support);
+app.get("/getAboutApp", authenticateJWT, getAboutApp);
 // GET ROOT
 app.get("/getRootXKey", root.getRootXKey);
 app.get("/getWrongWord", root.getWrongWord);
 app.get("/getCurrentWrongWord", root.getCurrentWrongWord);
 
 // POST
-app.post("/signUp", signUp);
-app.post("/updateScore", updateScore);
-app.post("/wrongWord", wrongWord);
+app.post("/signUp", verificationAuthPost, signUp);
+app.post("/updateScore", authenticateJWT, verificationAuthPost, updateScore);
+app.post("/wrongWord", authenticateJWT, wrongWord);
 
 // listener
 app.listen(PORT, (): void => {
