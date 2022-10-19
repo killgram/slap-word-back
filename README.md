@@ -10,6 +10,8 @@
 - [Mongodb](https://www.mongodb.com/)
 - [TS-Node](https://github.com/TypeStrong/ts-node)
 - [TS-Node-Dev](https://github.com/wclr/ts-node-dev)
+- [Jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+- [Body-parser](https://github.com/expressjs/body-parser)
 
 ## API Reference
 

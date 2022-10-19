@@ -18,6 +18,8 @@ import {
   getAboutApp,
 } from "./modules";
 
+import { authenticateJWT } from "./middleware";
+
 // configuration
 app.use(cors());
 app.use(express.json());
@@ -25,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // GET
 app.get("/status", getWorkStatus);
-app.get("/getWord", getWord);
+app.get("/getWord", authenticateJWT, getWord);
 app.get("/signIn", signIn);
 app.get("/checkWord", checkWord);
 app.get("/getTopScore", getTopScoreUsers);

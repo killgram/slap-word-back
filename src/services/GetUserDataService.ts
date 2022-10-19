@@ -1,5 +1,6 @@
 import { checkExistUserService } from "./CheckExistUserService";
 import { AuthEnum, client } from "../configurations";
+import { TokenUtils } from "../utils";
 
 const getUserDataService = async (login: string, password: string) => {
   let userData;
@@ -18,10 +19,12 @@ const getUserDataService = async (login: string, password: string) => {
       .toArray();
 
     if (dbUser.length) {
+      const accessToken = TokenUtils.generateAccessToken(login);
       userData = {
         login: dbUser[0].login,
         password: dbUser[0].password,
         maxScore: dbUser[0].maxScore,
+        accessToken: accessToken,
       };
     } else {
       userData = {
