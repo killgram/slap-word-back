@@ -4,7 +4,7 @@ import { updateScoreService } from "../services";
 
 const updateScore = async (req: Request, res: Response) => {
   const { login, password, score } = req.body;
-  if (!login || !password || typeof score === "undefined") {
+  if (typeof score === "undefined") {
     return res.status(200).send({
       title: "query param is missing",
       success: false,

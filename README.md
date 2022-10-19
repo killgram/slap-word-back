@@ -10,6 +10,8 @@
 - [Mongodb](https://www.mongodb.com/)
 - [TS-Node](https://github.com/TypeStrong/ts-node)
 - [TS-Node-Dev](https://github.com/wclr/ts-node-dev)
+- [Jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+- [Body-parser](https://github.com/expressjs/body-parser)
 
 ## API Reference
 
@@ -25,10 +27,11 @@ getting the status of the service
 GET /getWord
 ```
 
-| Parameter  | Type     | Description                  |
-|:-----------|:---------|:-----------------------------|
-| `language` | `string` | **Required**. Word language  |
-| `length`   | `string` | **Required**. Word length    |
+| Parameter        | Type     | Description                         |
+|:-----------------|:---------|:------------------------------------|
+| `language`       | `string` | **Required**. Word language         |
+| `length`         | `string` | **Required**. Word length           |
+| `Authorization`  | `Bearer` | **Required**. Header, access token  |
 
 getting a random word of a given length
 
@@ -47,10 +50,11 @@ gets user data
 GET /checkWord
 ```
 
-| Parameter  | Type     | Description                 |
-|:-----------|:---------|:----------------------------|
-| `language` | `string` | **Required**. Word language |
-| `word`     | `string` | **Required**. Search word   |
+| Parameter        | Type     | Description                        |
+|:-----------------|:---------|:-----------------------------------|
+| `language`       | `string` | **Required**. Word language        |
+| `word`           | `string` | **Required**. Search word          |
+| `Authorization`  | `Bearer` | **Required**. Header, access token |
 
 checking the word for existence in the database
 
@@ -58,15 +62,20 @@ checking the word for existence in the database
 GET /getTopScore
 ```
 
+| Parameter        | Type     | Description                        |
+|:-----------------|:---------|:-----------------------------------|
+| `Authorization`  | `Bearer` | **Required**. Header, access token |
+
 getting a list of users with the highest score
 
 ```http
 GET /getWordOfTheDay
 ```
 
-| Parameter  | Type     | Description                 |
-|:-----------|:---------|:----------------------------|
-| `language` | `string` | **Required**. Word language |
+| Parameter       | Type     | Description                        |
+|:----------------|:---------|:-----------------------------------|
+| `language`      | `string` | **Required**. Word language        |
+| `Authorization` | `Bearer` | **Required**. Header, access token |
 
 getting the word of the day
 
@@ -74,11 +83,19 @@ getting the word of the day
 GET /support
 ```
 
+| Parameter        | Type     | Description                        |
+|:-----------------|:---------|:-----------------------------------|
+| `Authorization`  | `Bearer` | **Required**. Header, access token |
+
 get support data
 
 ```http
 GET /getAboutApp
 ```
+
+| Parameter        | Type     | Description                        |
+|:-----------------|:---------|:-----------------------------------|
+| `Authorization`  | `Bearer` | **Required**. Header, access token |
 
 get about app data
 
@@ -99,11 +116,12 @@ registers a user in the system
 POST /updateScore
 ```
 
-| Parameter  | Type     | Description                 |
-|:-----------|:---------|:----------------------------|
-| `login`    | `string` | **Required**. User login    |
-| `password` | `string` | **Required**. User password |
-| `score`    | `number` | **Required**. User score    |
+| Parameter        | Type     | Description                        |
+|:-----------------|:---------|:-----------------------------------|
+| `login`          | `string` | **Required**. User login           |
+| `password`       | `string` | **Required**. User password        |
+| `score`          | `number` | **Required**. User score           |
+| `Authorization`  | `Bearer` | **Required**. Header, access token |
 
 updates the user's score
 
@@ -111,9 +129,10 @@ updates the user's score
 POST /wrongWord
 ```
 
-| Parameter | Type     | Description                    |
-|:----------|:---------|:-------------------------------|
-| `word`    | `string` | **Required**. User suggestions |
+| Parameter        | Type     | Description                        |
+|:-----------------|:---------|:-----------------------------------|
+| `word`           | `string` | **Required**. User suggestions     |
+| `Authorization`  | `Bearer` | **Required**. Header, access token |
 
 send a custom suggestion for the wrong word
 

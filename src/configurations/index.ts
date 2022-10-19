@@ -1,4 +1,4 @@
-import { db_url } from "./Keys";
+import { db_url, accessTokenSecret } from "./Keys";
 import { client } from "./DBClient";
 import {
   DBLists,
@@ -26,4 +26,5 @@ export {
   RootTableEnum,
   SupportEnum,
   AboutAppEnum,
+  accessTokenSecret,
 };
