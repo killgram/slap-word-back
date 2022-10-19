@@ -39,7 +39,7 @@ app.get("/getWordOfTheDay", authenticateJWT, getWordOfTheDay);
 app.get("/support", authenticateJWT, support);
 app.get("/getAboutApp", authenticateJWT, getAboutApp);
 // GET ROOT
-app.get("/getRootXKey", root.getRootXKey);
+app.get("/getRootXKey", verificationAuthGet, root.getRootXKey);
 app.get("/getWrongWord", root.getWrongWord);
 app.get("/getCurrentWrongWord", root.getCurrentWrongWord);
 
