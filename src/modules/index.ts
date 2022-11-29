@@ -10,8 +10,6 @@ import { wrongWord } from "./WrongWord";
 import { support } from "./Support";
 import { getAboutApp } from "./GetAboutApp";
 
-import * as root from "./root";
-
 export {
   getWorkStatus,
   getWord,
@@ -22,7 +20,6 @@ export {
   getTopScoreUsers,
   getWordOfTheDay,
   wrongWord,
-  root,
   support,
   getAboutApp,
 };

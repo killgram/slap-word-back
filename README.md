@@ -135,37 +135,3 @@ POST /wrongWord
 | `Authorization`  | `Bearer` | **Required**. Header, access token |
 
 send a custom suggestion for the wrong word
-
-#### ROOT GET
-
-```http
-GET /getRootXKey
-```
-
-| Parameter  | Type     | Description                 |
-|:-----------|:---------|:----------------------------|
-| `login`    | `string` | **Required**. Root login    |
-| `password` | `string` | **Required**. Root password |
-
-get root xKey
-
-```http
-GET /getWrongWord
-```
-
-| Parameter  | Type     | Description              |
-|:-----------|:---------|:-------------------------|
-| `xKey`     | `string` | **Required**. Root xKey  |
-
-get a list of invalid words
-
-```http
-GET /getCurrentWrongWord
-```
-
-| Parameter | Type     | Description             |
-|:----------|:---------|:------------------------|
-| `xKey`    | `string` | **Required**. Root xKey |
-| `word`    | `string` | **Required**. Word      |
-
-returns the number of matches of the wrong word

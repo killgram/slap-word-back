@@ -13,7 +13,6 @@ import {
   getTopScoreUsers,
   getWordOfTheDay,
   wrongWord,
-  root,
   support,
   getAboutApp,
 } from "./modules";
@@ -38,10 +37,6 @@ app.get("/getTopScore", authenticateJWT, getTopScoreUsers);
 app.get("/getWordOfTheDay", authenticateJWT, getWordOfTheDay);
 app.get("/support", authenticateJWT, support);
 app.get("/getAboutApp", authenticateJWT, getAboutApp);
-// GET ROOT
-app.get("/getRootXKey", verificationAuthGet, root.getRootXKey);
-app.get("/getWrongWord", root.getWrongWord);
-app.get("/getCurrentWrongWord", root.getCurrentWrongWord);
 
 // POST
 app.post("/signUp", verificationAuthPost, signUp);
