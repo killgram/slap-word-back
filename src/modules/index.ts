@@ -9,6 +9,7 @@ import { getWordOfTheDay } from "./GetWordOfTheDay";
 import { wrongWord } from "./WrongWord";
 import { support } from "./Support";
 import { getAboutApp } from "./GetAboutApp";
+import { getHistory } from "./GetHistory";
 
 export {
   getWorkStatus,
@@ -22,4 +23,5 @@ export {
   wrongWord,
   support,
   getAboutApp,
+  getHistory,
 };

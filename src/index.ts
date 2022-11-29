@@ -15,6 +15,7 @@ import {
   wrongWord,
   support,
   getAboutApp,
+  getHistory,
 } from "./modules";
 
 import {
@@ -37,6 +38,7 @@ app.get("/getTopScore", authenticateJWT, getTopScoreUsers);
 app.get("/getWordOfTheDay", authenticateJWT, getWordOfTheDay);
 app.get("/support", authenticateJWT, support);
 app.get("/getAboutApp", authenticateJWT, getAboutApp);
+app.get("/history", getHistory);
 
 // POST
 app.post("/signUp", verificationAuthPost, signUp);

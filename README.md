@@ -99,6 +99,12 @@ GET /getAboutApp
 
 get about app data
 
+```http
+GET /history
+```
+
+get historical data
+
 #### POST
 
 ```http
