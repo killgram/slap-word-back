@@ -11,6 +11,7 @@ import { AuthEnum } from "./AuthEnum";
 import { WrongWordEnum } from "./WrongWordEnum";
 import { SupportEnum } from "./SupportEnum";
 import { AboutAppEnum } from "./AboutAppEnum";
+import { CheckWordsEnum } from "./CheckWordsEnum";
 
 export {
   db_url,
@@ -25,4 +26,5 @@ export {
   SupportEnum,
   AboutAppEnum,
   accessTokenSecret,
+  CheckWordsEnum,
 };
