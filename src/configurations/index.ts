@@ -9,7 +9,6 @@ import {
 import { Constants } from "./Constants";
 import { AuthEnum } from "./AuthEnum";
 import { WrongWordEnum } from "./WrongWordEnum";
-import { RootTableEnum } from "./RootTableEnum";
 import { SupportEnum } from "./SupportEnum";
 import { AboutAppEnum } from "./AboutAppEnum";
 
@@ -23,7 +22,6 @@ export {
   CollectionLists,
   AuthEnum,
   WrongWordEnum,
-  RootTableEnum,
   SupportEnum,
   AboutAppEnum,
   accessTokenSecret,
