@@ -1,15 +1,12 @@
-import { client } from "../configurations";
-import { getWordDb } from "../utils";
+import { CheckWordsEnum, client } from "../configurations";
 
 const checkWordIsExist = async (
   language: string,
-  length: any,
   word: string
 ): Promise<boolean> => {
   let isExist = false;
-  const enumDb = getWordDb(language, length);
-  const dbName = enumDb.dbName;
-  const collectionName = enumDb.collectionName;
+  const dbName = CheckWordsEnum.CHECK_WORDS_TABLE;
+  const collectionName = CheckWordsEnum.CHECK_WORDS_DATA;
 
   const dbClient = await client.connect();
   const cWordsDb = dbClient.db(dbName).collection(collectionName);

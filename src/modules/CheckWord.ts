@@ -17,11 +17,7 @@ const checkWord = async (req: Request, res: Response) => {
     });
   }
 
-  const isWordExist = await checkWordIsExist(
-    String(language),
-    word.length,
-    String(word)
-  );
+  const isWordExist = await checkWordIsExist(String(language), String(word));
 
   res.status(200).send(isWordExist);
 };

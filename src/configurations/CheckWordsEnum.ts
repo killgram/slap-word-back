@@ -1,0 +1,4 @@
+export enum CheckWordsEnum {
+  CHECK_WORDS_TABLE = "RU_CHECK_WORDS_DB",
+  CHECK_WORDS_DATA = "CHECK_WORDS",
+}
