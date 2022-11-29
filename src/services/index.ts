@@ -8,6 +8,8 @@ import { getTopScoreListService } from "./GetTopScoreListService";
 import { setWrongWordService } from "./SetWrongWordService";
 import { getSupportService } from "./GetSupportService";
 import { getAboutAppService } from "./GetAboutAppService";
+import { getWordsLengthService } from "./GetWordsLengthService";
+import { getWrongWordsService } from "./GetWrongWordsService";
 
 export {
   getWordService,
@@ -20,4 +22,6 @@ export {
   setWrongWordService,
   getSupportService,
   getAboutAppService,
+  getWordsLengthService,
+  getWrongWordsService,
 };
