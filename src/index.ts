@@ -22,6 +22,7 @@ import {
   authenticateJWT,
   verificationAuthGet,
   verificationAuthPost,
+  historyAuthenticate,
 } from "./middleware";
 
 // configuration
@@ -38,7 +39,7 @@ app.get("/getTopScore", authenticateJWT, getTopScoreUsers);
 app.get("/getWordOfTheDay", authenticateJWT, getWordOfTheDay);
 app.get("/support", authenticateJWT, support);
 app.get("/getAboutApp", authenticateJWT, getAboutApp);
-app.get("/history", getHistory);
+app.get("/history", historyAuthenticate, getHistory);
 
 // POST
 app.post("/signUp", verificationAuthPost, signUp);
