@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { setWrongWordService } from "../services";
+import { setWrongWordService, DiscordService } from "../services";
 
 const wrongWord = async (req: Request, res: Response) => {
   const { word } = req.body;
@@ -11,6 +11,9 @@ const wrongWord = async (req: Request, res: Response) => {
     });
   }
   await setWrongWordService(word);
+
+  await DiscordService.sendWrongWord(word);
+
   res.status(200).send({
     title: "successfully added",
     success: true,

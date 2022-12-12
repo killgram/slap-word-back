@@ -16,4 +16,10 @@ const GetHistory = {
   color: 2925067,
 };
 
-export { SignIn, SignUp, GetHistory };
+const WrongWord = {
+  username: "Wrong word",
+  content: "New wrong word",
+  color: 10657035,
+};
+
+export { SignIn, SignUp, GetHistory, WrongWord };
