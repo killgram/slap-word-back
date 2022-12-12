@@ -107,3 +107,4 @@ dist
 package-lock.json
 .idea
 src/configurations/Keys.ts
+src/configurations/Discord.ts

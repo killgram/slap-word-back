@@ -9,6 +9,7 @@ import { setWrongWordService } from "./SetWrongWordService";
 import { getAboutAppService } from "./GetAboutAppService";
 import { getWordsLengthService } from "./GetWordsLengthService";
 import { getWrongWordsService } from "./GetWrongWordsService";
+import * as DiscordService from "./discord";
 
 export {
   getWordService,
@@ -22,4 +23,5 @@ export {
   getAboutAppService,
   getWordsLengthService,
   getWrongWordsService,
+  DiscordService,
 };
