@@ -4,4 +4,10 @@ const SignIn = {
   color: 2925067,
 };
 
-export { SignIn };
+const SignUp = {
+  username: "Reg user",
+  content: "New user registered",
+  color: 10657035,
+};
+
+export { SignIn, SignUp };

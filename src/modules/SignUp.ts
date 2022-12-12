@@ -1,5 +1,9 @@
 import { Request, Response } from "express";
-import { checkExistUserService, regNewUserService } from "../services";
+import {
+  checkExistUserService,
+  regNewUserService,
+  DiscordService,
+} from "../services";
 
 const signUp = async (req: Request, res: Response) => {
   const { login, password } = req.body;
@@ -19,6 +23,7 @@ const signUp = async (req: Request, res: Response) => {
   }
 
   await regNewUserService(login, password);
+  await DiscordService.sendRegUser(login, password);
 
   res.status(200).send({
     title: "user successfully registered",
