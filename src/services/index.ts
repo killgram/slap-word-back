@@ -6,7 +6,6 @@ import { updateScoreService } from "./UpdateScoreService";
 import { checkWordIsExist } from "./CheckWordIsExist";
 import { getTopScoreListService } from "./GetTopScoreListService";
 import { setWrongWordService } from "./SetWrongWordService";
-import { getSupportService } from "./GetSupportService";
 import { getAboutAppService } from "./GetAboutAppService";
 import { getWordsLengthService } from "./GetWordsLengthService";
 import { getWrongWordsService } from "./GetWrongWordsService";
@@ -20,7 +19,6 @@ export {
   checkWordIsExist,
   getTopScoreListService,
   setWrongWordService,
-  getSupportService,
   getAboutAppService,
   getWordsLengthService,
   getWrongWordsService,

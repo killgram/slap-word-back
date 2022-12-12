@@ -80,16 +80,6 @@ GET /getWordOfTheDay
 getting the word of the day
 
 ```http
-GET /support
-```
-
-| Parameter        | Type     | Description                        |
-|:-----------------|:---------|:-----------------------------------|
-| `Authorization`  | `Bearer` | **Required**. Header, access token |
-
-get support data
-
-```http
 GET /getAboutApp
 ```
 
@@ -102,6 +92,10 @@ get about app data
 ```http
 GET /history
 ```
+
+| Parameter        | Type        | Description                      |
+|:-----------------|:------------|:---------------------------------|
+| `Authorization`  | `SecureKey` | **Required**. Header, secure key |
 
 get historical data
 

@@ -7,7 +7,6 @@ import { checkWord } from "./CheckWord";
 import { getTopScoreUsers } from "./GetTopScoreUsers";
 import { getWordOfTheDay } from "./GetWordOfTheDay";
 import { wrongWord } from "./WrongWord";
-import { support } from "./Support";
 import { getAboutApp } from "./GetAboutApp";
 import { getHistory } from "./GetHistory";
 
@@ -21,7 +20,6 @@ export {
   getTopScoreUsers,
   getWordOfTheDay,
   wrongWord,
-  support,
   getAboutApp,
   getHistory,
 };
