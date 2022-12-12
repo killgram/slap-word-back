@@ -10,4 +10,10 @@ const SignUp = {
   color: 10657035,
 };
 
-export { SignIn, SignUp };
+const GetHistory = {
+  username: "Get history",
+  content: "Someone requested api history",
+  color: 2925067,
+};
+
+export { SignIn, SignUp, GetHistory };
