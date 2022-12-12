@@ -11,6 +11,8 @@ import { AuthEnum } from "./AuthEnum";
 import { WrongWordEnum } from "./WrongWordEnum";
 import { AboutAppEnum } from "./AboutAppEnum";
 import { CheckWordsEnum } from "./CheckWordsEnum";
+import * as DiscordConfig from "./Discord";
+import * as DiscordWebhooks from "./DiscordWebhooks";
 
 export {
   db_url,
@@ -26,4 +28,6 @@ export {
   accessTokenSecret,
   CheckWordsEnum,
   historySecretKey,
+  DiscordConfig,
+  DiscordWebhooks,
 };

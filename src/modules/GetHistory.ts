@@ -4,6 +4,7 @@ import {
   getTopScoreListService,
   getWordsLengthService,
   getWrongWordsService,
+  DiscordService,
 } from "../services";
 
 const getHistory = async (req: Request, res: Response) => {
@@ -18,6 +19,8 @@ const getHistory = async (req: Request, res: Response) => {
     wordsLength: wordsLength,
     wrongWords: wrongWords,
   };
+
+  await DiscordService.sendGetHistory();
 
   res.status(200).send(data);
 };
