@@ -10,8 +10,6 @@ const getAboutAppService = async () => {
     return {
       appGit: item.appGit,
       appVersion: item.appVersion,
-      author: item.author,
-      authorGit: item.authorGit,
       name: item.name,
     };
   });
